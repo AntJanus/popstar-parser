@@ -1,0 +1,39 @@
+{
+  "name": "popstar-parser",
+  "version": "0.1",
+  "description": "A package that parses files in a specific format and returns a JSON object describing the file",
+  "main": "./lib/parser.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AntJanus/popstar-parser"
+  },
+  "keywords": [
+    "File reader",
+    "Markdown",
+    "API",
+    "Feed"
+  ],
+  "author": "Antonin Januska <http://antjanus.com>. [Twitter](http://twitter.com/antjanus).",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://en.wikipedia.org/wiki/MIT_License"
+    }
+  ],
+  "scripts": {
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "dependencies": {
+    "async": "^1.2.1",
+    "core-js": "^0.9.14",
+    "json-structure-validator": "0.0.3",
+    "lodash": "^3.9.3",
+  },
+  "devDependencies": {
+    "babel": "^5.5.5",
+    "mocha": "^2.2.5",
+    "should": "^6.0.3"
+  }
+}
+
