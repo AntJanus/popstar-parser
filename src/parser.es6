@@ -1,4 +1,4 @@
-mport 'core-js/shim';
+import 'core-js/shim';
 import _ from 'lodash';
 
 class parser {
